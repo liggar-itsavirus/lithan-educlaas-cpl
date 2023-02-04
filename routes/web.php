@@ -6,6 +6,7 @@ use App\Http\Livewire\Pages\Admin\AdminManageOutlet;
 use App\Http\Livewire\Pages\Admin\AdminOrderDetail;
 use App\Http\Livewire\Pages\Admin\ManageOrder;
 use App\Http\Livewire\Pages\Admin\ManageProduct;
+use App\Http\Livewire\Pages\OurStory;
 use App\Http\Livewire\Pages\ShowAllProduct as GuestShowAllProduct;
 use App\Http\Livewire\Pages\Users\ShippingAddress;
 use App\Http\Livewire\Pages\Users\ShoppingCart;
@@ -35,6 +36,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', Welcome::class)->name('landing');
 Route::get('/show-all-product/{category}', GuestShowAllProduct::class)->name('show-all-product');
+Route::get('/our-story', OurStory::class)->name('our-story');
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     if (Auth::check()) {

@@ -58,7 +58,7 @@ class ShoppingCart extends Component
         if (!$this->cartitems->isEmpty()) {
             return redirect()->route('user.shipping-address');
         } else {
-            sweetAlert()->addWarning('Test', 'title');
+            sweetAlert()->addWarning('Add products to the cart', 'The shopping cart was empty!!');
             return back();
         }
     }

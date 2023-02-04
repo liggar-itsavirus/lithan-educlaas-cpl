@@ -3,8 +3,8 @@
         style="background-image: url('https://preview.colorlib.com/theme/timezone/assets/img/hero/about_hero.png.webp');">
         <div class="container mx-auto text-center justify-center">
             <h1 class="text-6xl text-gray-800 font-medium uppercase mb-3">OUTLET</h1>
-            <div>Here is a list of all the Bite and Beans locations nationwide. The Bite and Beans are not yet
-                available in your Province or City if it is not listed.</div>
+            {{-- <div>Here is a list of all the Bite and Beans locations nationwide. The Bite and Beans are not yet
+                available in your Province or City if it is not listed.</div> --}}
         </div>
     </div>
     <div class="mx-auto container py-8">

@@ -369,7 +369,7 @@
                                 </ul>
                         </li>
                         <li>
-                            <a href="#"
+                            <a href="{{ route('our-story') }}"
                                 class="text-lg block py-2 pl-3 pr-4 text-[#E5E5CB] rounded hover:bg-[#D5CEA3] md:hover:bg-transparent md:border-0 md:hover:text-[#D5CEA3] md:p-0">Our
                                 Story</a>
                         </li>
