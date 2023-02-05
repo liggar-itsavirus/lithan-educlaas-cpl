@@ -17,6 +17,7 @@ class Order extends Model
         'total_price',
         'payment_type',
         'total_quantity',
+        'created_at'
     ];
 
     public $stateMachines = [

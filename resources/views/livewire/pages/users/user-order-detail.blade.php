@@ -5,8 +5,11 @@
                 <h1 class="font-semibold text-3xl pb-5 mb-3 text-[#1A120B]">Order Detail</h1>
                 <div class="flex justify-between mb-3">
                     <div class="mb-3 text-lg text-[#1A120B]">Order Number #20230117-001</div>
-                    <div class="mb-3 text-lg"><i class="fa-regular fa-calendar-days text-[#1A120B]"></i> Tuesday, on
-                        January 17 2023 <i class="fa-regular fa-clock"></i> 10:11 AM</div>
+                    <div class="mb-3 text-lg"><i class="fa-regular fa-calendar-days text-[#1A120B]"></i>
+                        {{ $this->order_detail->first()->created_at->format('l jS \of F Y') }}
+                        <i class="fa-regular fa-clock"></i>
+                        {{ $this->order_detail->first()->created_at->format('h:i:s A') }}
+                    </div>
                 </div>
                 <div class="flex justify-between mb-3">
                     <div class="pr-5 mb-3">
